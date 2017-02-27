@@ -1,0 +1,23 @@
+{
+  "name": "dtownmom",
+  "version": "1.0.0",
+  "description": "The Dtownmom website source code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ispyhumanfly/dtownmom.git"
+  },
+  "author": "Dan Stephenson (ispyhumanfly)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ispyhumanfly/dtownmom/issues"
+  },
+  "homepage": "https://github.com/ispyhumanfly/dtownmom#readme",
+  "dependencies": {
+    "jasmine": "^2.5.3",
+    "typings": "^2.1.0"
+  }
+}
