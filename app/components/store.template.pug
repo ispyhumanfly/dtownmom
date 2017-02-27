@@ -11,11 +11,11 @@ html(lang='en')
 
     meta(name='theme-color', content='#333')
 
-    title Material Style
+    title Dtownmom
 
     meta(name='description', content='Material Style Theme')
 
-    link(rel='shortcut icon', href='assets/img/favicon.png?v=3')
+    link(rel='shortcut icon', href='assets/img/favicon.png')
 
     link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
 
@@ -36,191 +36,10 @@ html(lang='en')
 
   body
 
-    #ms-configurator.ms-configurator
-      .ms-configurator-title
-        h3
-          i.fa.fa-gear
-          |  Theme Configurator
-
-        a.ms-conf-btn.withripple(href='javascript:void(0);')
-          i.zmdi.zmdi-close
-
-      #accordion_conf.panel-group(role='tablist', aria-multiselectable='true')
-        .panel.panel-default
-          #ms-conf-header-color.panel-heading(role='tab')
-            h4.panel-title
-              a.withripple(role='button', data-toggle='collapse', data-parent='#accordion_conf', href='#ms-collapse-conf-1', aria-expanded='true', aria-controls='ms-collapse-conf-1')
-                i.zmdi.zmdi-invert-colors
-                |  Color Selector
-
-          #ms-collapse-conf-1.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='ms-conf-header-color')
-            .panel-body
-              #color-options.ms-colors-container
-                a.ms-color-box.ms-color-box-primary.red(href='javascript:void(0);', data-color='red') red
-
-                a.ms-color-box.ms-color-box-primary.pink(href='javascript:void(0);', data-color='pink') pink
-
-                a.ms-color-box.ms-color-box-primary.purple(href='javascript:void(0);', data-color='purple') purple
-
-                a.ms-color-box.ms-color-box-primary.deep-purple(href='javascript:void(0);', data-color='deep-purple') deep-purple
-
-                a.ms-color-box.ms-color-box-primary.indigo(href='javascript:void(0);', data-color='indigo') indigo
-
-                a.ms-color-box.ms-color-box-primary.blue(href='javascript:void(0);', data-color='blue') blue
-
-                a.ms-color-box.ms-color-box-primary.light-blue.active(href='javascript:void(0);', data-color='light-blue') light-blue
-
-                a.ms-color-box.ms-color-box-primary.cyan(href='javascript:void(0);', data-color='cyan') cyan
-
-                a.ms-color-box.ms-color-box-primary.teal(href='javascript:void(0);', data-color='teal') teal
-
-                a.ms-color-box.ms-color-box-primary.green(href='javascript:void(0);', data-color='green') green
-
-                a.ms-color-box.ms-color-box-primary.light-green(href='javascript:void(0);', data-color='light-green') light-green
-
-                a.ms-color-box.ms-color-box-primary.lime(href='javascript:void(0);', data-color='lime') lime
-
-                a.ms-color-box.ms-color-box-primary.yellow(href='javascript:void(0);', data-color='yellow') yellow
-
-                a.ms-color-box.ms-color-box-primary.amber(href='javascript:void(0);', data-color='amber') amber
-
-                a.ms-color-box.ms-color-box-primary.orange(href='javascript:void(0);', data-color='orange') orange
-
-                a.ms-color-box.ms-color-box-primary.deep-orange(href='javascript:void(0);', data-color='deep-orange') deep-orange
-
-                a.ms-color-box.ms-color-box-primary.brown(href='javascript:void(0);', data-color='brown') brown
-
-                a.ms-color-box.ms-color-box-primary.grey(href='javascript:void(0);', data-color='grey') grey
-
-                a.ms-color-box.ms-color-box-primary.blue-grey(href='javascript:void(0);', data-color='blue-grey') blue-grey
-
-              #grad-options.ms-color-shine
-                h4.no-mb.text-center Color Brightness
-
-                span 300
-
-                span 400
-
-                span 500
-
-                span 600
-
-                span 700
-
-                span 800
-
-                a.ms-color-box.grad.c300.light-blue(href='javascript:void(0)', data-shine='300') 300
-
-                a.ms-color-box.grad.c400.light-blue(href='javascript:void(0)', data-shine='400') 400
-
-                a.ms-color-box.grad.c500.light-blue.active(href='javascript:void(0)', data-shine='500') 500
-
-                a.ms-color-box.grad.c600.light-blue(href='javascript:void(0)', data-shine='600') 600
-
-                a.ms-color-box.grad.c700.light-blue(href='javascript:void(0)', data-shine='700') 700
-
-                a.ms-color-box.grad.c800.light-blue(href='javascript:void(0)', data-shine='800') 800
-
-        .panel.panel-default
-          #ms-conf-header-headers.panel-heading(role='tab')
-            h4.panel-title
-              a.collapsed.withripple(role='button', data-toggle='collapse', data-parent='#accordion_conf', href='#ms-collapse-conf-2', aria-expanded='false', aria-controls='ms-collapse-conf-2')
-                i.zmdi.zmdi-view-compact
-                |  Header Styles
-
-          #ms-collapse-conf-2.panel-collapse.collapse(role='tabpanel', aria-labelledby='ms-conf-header-headers')
-            .panel-body
-              //
-                <h5>Preset Options</h5>
-                <form class="form-inverse ms-conf-radio">
-                <div class="form-group">
-                <div class="radio radio-primary">
-                <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">Default Style
-                </label>
-                </div>
-                <div class="radio radio-primary">
-                <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Pure Material
-                </label>
-                </div>
-                <div class="radio radio-primary">
-                <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Navbar Mode
-                </label>
-                </div>
-                </div>
-                </form>
-                <h5>Custom Header</h5>
-              h6 Header Options
-
-              form#header-config.form-inverse.ms-conf-radio
-                .form-group
-                  .radio.radio-primary
-                    label
-                      input#whiteHeader(type='radio', name='customHeader', value='white', checked='cheked')
-                      |  Light Color
-
-                  .radio.radio-primary
-                    label
-                      input#primaryHeader(type='radio', name='customHeader', value='primary')
-                      |  Primary Color
-
-                  .radio.radio-primary
-                    label
-                      input#darkHeader(type='radio', name='customHeader', value='dark')
-                      |  Dark Color
-
-                  .radio.radio-primary
-                    label
-                      input#noHeader(type='radio', name='customHeader', value='hidden')
-                      |  No Header (Navbar Mode)
-
-              h6 Navbar Options
-
-              form#navbar-config.form-inverse.ms-conf-radio
-                .form-group
-                  .radio.radio-primary
-                    label
-                      input#whiteNavbar(type='radio', name='customNavbar', value='white', checked='')
-                      |  Light Color
-
-                  .radio.radio-primary
-                    label
-                      input#primaryNavbar(type='radio', name='customNavbar', value='primary')
-                      |  Primary Color
-
-                  .radio.radio-primary
-                    label
-                      input#darkNavbar(type='radio', name='customNavbar', value='dark')
-                      |  Dark Color
-
-        .panel.panel-default
-          #ms-conf-header-container.panel-heading(role='tab')
-            h4.panel-title
-              a.collapsed.withripple(role='button', data-toggle='collapse', data-parent='#accordion_conf', href='#ms-conf-collapse-3', aria-expanded='false', aria-controls='ms-conf-collapse-3')
-                i.zmdi.zmdi-grid
-                |  Container Options
-
-          #ms-conf-collapse-3.panel-collapse.collapse(role='tabpanel', aria-labelledby='ms-conf-header-container')
-            .panel-body
-              form#boxed-config.form-inverse.ms-conf-radio
-                .form-group
-                  .radio.radio-primary
-                    label
-                      input#fullWidth(type='radio', name='customWidth', value='full', checked='')
-                      |  Full Width
-
-                  .radio.radio-primary
-                    label
-                      input#boxedWidth(type='radio', name='customWidth', value='boxed')
-                      |  Boxed Mode
-
     #ms-preload.ms-preload
       #status
         .spinner
           .dot1
-
           .dot2
 
     .sb-site-container
