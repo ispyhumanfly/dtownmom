@@ -1,0 +1,662 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+
+    title Dtownmom
+
+    meta(name='description', content='Dtownmom Theme')
+    link(rel='shortcut icon', href='assets/img/favicon.png')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+
+    link(rel='stylesheet', href='assets/css/preload.min.css')
+
+    link(rel='stylesheet', href='assets/css/plugins.min.css')
+
+    link(rel='stylesheet', href='assets/css/style.light-blue-500.min.css')
+
+    link#ms-boxed(rel='stylesheet', href='assets/css/width-boxed.min.css', disabled='')
+
+    //if lt IE 9
+      script(src='assets/js/html5shiv.min.js')
+      script(src='assets/js/respond.min.js')
+
+    style
+        include:less:clean-css blog.style.less
+
+  body
+
+    #ms-preload.ms-preload
+      #status
+        .spinner
+          .dot1
+          .dot2
+
+    .sb-site-container
+      header.ms-header.ms-header-primary
+        .container.container-full
+          .ms-title
+            a(href='/')
+              span.ms-logo.animated.zoomInDown.animation-delay-5 JK
+              h1.animated.fadeInRight.animation-delay-6
+                | Dtown
+                span mom
+
+          .header-right
+            .share-menu
+              ul.share-menu-list
+                li.animated.fadeInRight.animation-delay-3
+                  a.btn-circle.btn-google(href='javascript:void(0)')
+                    i.zmdi.zmdi-google
+
+                li.animated.fadeInRight.animation-delay-2
+                  a.btn-circle.btn-facebook(href='javascript:void(0)')
+                    i.zmdi.zmdi-facebook
+
+                li.animated.fadeInRight.animation-delay-1
+                  a.btn-circle.btn-twitter(href='javascript:void(0)')
+                    i.zmdi.zmdi-twitter
+
+              a.btn-circle.btn-circle-primary.animated.zoomInDown.animation-delay-7(href='javascript:void(0)')
+                i.zmdi.zmdi-share
+
+            form.search-form.animated.zoomInDown.animation-delay-9
+              input#search-box.search-input(type='text', placeholder='Search...', name='q')
+
+              label(for='search-box')
+                i.zmdi.zmdi-search
+
+
+        include navigation.template.pug
+
+      .container
+        .row
+          .col-md-8
+            article.card.mb-4.wow.materialUp.animation-delay-5
+              figure.ms-thumbnail.ms-thumbnail-diagonal
+                img.img-responsive(src='http://minutes.wpengine.netdna-cdn.com/wp-content/uploads/2015/07/Matilda-Jane-Dresses-at-the-Beach.jpg', alt='')
+
+                figcaption.ms-thumbnail-caption.text-center
+                  .ms-thumbnail-caption-content
+                    h3.ms-thumbnail-caption-title Lorem ipsum dolor sit
+
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+                    .mt-2
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.mr-1.btn-circle-white.color-danger(href='javascript:void(0)')
+                        i.zmdi.zmdi-favorite
+
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.ml-1.mr-1.btn-circle-white.color-warning(href='javascript:void(0)')
+                        i.zmdi.zmdi-star
+
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.ml-1.btn-circle-white.color-success(href='javascript:void(0)')
+                        i.zmdi.zmdi-share
+
+              .card-block
+                h2
+                  a(href='javascript:void(0)') Lorem ipsum Minim Ut in nulla labore sint nostrud
+                p
+                  | Sed ut perspiciatis unde omnis iste natus error nesciunt voluptas sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                p
+                  | Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt voluptas sit aspernatur.
+
+                .row
+                  .col-md-6
+                    .mt-1
+                      a.ms-tag.ms-tag-info(href='javascript:void(0)') Design
+                      a.ms-tag.ms-tag-danger(href='javascript:void(0)') Productivity
+                      a.ms-tag.ms-tag-royal(href='javascript:void(0)') Resources
+
+                  .col-md-6
+                    a.btn.btn-primary.btn-raised.btn-block.animate-icon(href='javascript:void(0)')
+                      | Read more
+                      i.ml-1.no-mr.zmdi.zmdi-long-arrow-right
+
+            article.card.mb-4.wow.materialUp.animation-delay-5
+              figure.ms-thumbnail.ms-thumbnail-diagonal
+                img.img-responsive(src='http://www.ndaltonphoto.com/img/s12/v181/p1060627999-5.jpg', alt='')
+
+                figcaption.ms-thumbnail-caption.text-center
+                  .ms-thumbnail-caption-content
+                    h3.ms-thumbnail-caption-title Lorem ipsum dolor sit
+
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+                    .mt-2
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.mr-1.btn-circle-white.color-danger(href='javascript:void(0)')
+                        i.zmdi.zmdi-favorite
+
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.ml-1.mr-1.btn-circle-white.color-warning(href='javascript:void(0)')
+                        i.zmdi.zmdi-star
+
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.ml-1.btn-circle-white.color-success(href='javascript:void(0)')
+                        i.zmdi.zmdi-share
+
+              .card-block
+                h2
+                  a(href='javascript:void(0)') Lorem ipsum Minim Ut in nulla labore sint nostrud
+
+                p
+                  | Sed ut perspiciatis unde omnis iste natus error nesciunt voluptas sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+                p
+                  | Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt voluptas sit aspernatur.
+
+                .row
+                  .col-md-6
+                    .mt-1
+                      a.ms-tag.ms-tag-info(href='javascript:void(0)') Design
+                      a.ms-tag.ms-tag-success(href='javascript:void(0)') Multimedia
+                      a.ms-tag.ms-tag-warning(href='javascript:void(0)') Graphics
+                  .col-md-6
+                    a.btn.btn-primary.btn-raised.btn-block.animate-icon(href='javascript:void(0)')
+                      | Read more
+                      i.ml-1.no-mr.zmdi.zmdi-long-arrow-right
+            article.card.mb-4.wow.materialUp.animation-delay-5
+              figure.ms-thumbnail.ms-thumbnail-diagonal
+                img.img-responsive(src='http://www.storyoffive.com/wp-content/uploads/2014/07/IMG_98082.jpg', alt='')
+                figcaption.ms-thumbnail-caption.text-center
+                  .ms-thumbnail-caption-content
+                    h3.ms-thumbnail-caption-title Lorem ipsum dolor sit
+
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+                    .mt-2
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.mr-1.btn-circle-white.color-danger(href='javascript:void(0)')
+                        i.zmdi.zmdi-favorite
+
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.ml-1.mr-1.btn-circle-white.color-warning(href='javascript:void(0)')
+                        i.zmdi.zmdi-star
+
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.ml-1.btn-circle-white.color-success(href='javascript:void(0)')
+                        i.zmdi.zmdi-share
+
+              .card-block
+                h2
+                  a(href='javascript:void(0)') Lorem ipsum Minim Ut in nulla labore sint nostrud
+
+                p
+                  | Sed ut perspiciatis unde omnis iste natus error nesciunt voluptas sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                p
+                  | Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt voluptas sit aspernatur.
+                .row
+                  .col-md-6
+                    .mt-1
+                      a.ms-tag.ms-tag-info(href='javascript:void(0)') Design
+                      a.ms-tag.ms-tag-warning(href='javascript:void(0)') Graphics
+                      a.ms-tag.ms-tag-royal(href='javascript:void(0)') Resources
+
+                  .col-md-6
+                    a.btn.btn-primary.btn-raised.btn-block.animate-icon(href='javascript:void(0)')
+                      | Read more
+                      i.ml-1.no-mr.zmdi.zmdi-long-arrow-right
+
+            article.card.mb-4.wow.materialUp.animation-delay-5
+              figure.ms-thumbnail.ms-thumbnail-diagonal
+                img.img-responsive(src='http://4.bp.blogspot.com/-X0IOWS101fk/Ulhq6smpo9I/AAAAAAAACHI/r8ccW7-3ol0/s1600/MJCReviewDSC03538_7.5x5.jpg', alt='')
+
+                figcaption.ms-thumbnail-caption.text-center
+                  .ms-thumbnail-caption-content
+                    h3.ms-thumbnail-caption-title Lorem ipsum dolor sit
+
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+                    .mt-2
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.mr-1.btn-circle-white.color-danger(href='javascript:void(0)')
+                        i.zmdi.zmdi-favorite
+
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.ml-1.mr-1.btn-circle-white.color-warning(href='javascript:void(0)')
+                        i.zmdi.zmdi-star
+
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.ml-1.btn-circle-white.color-success(href='javascript:void(0)')
+                        i.zmdi.zmdi-share
+
+              .card-block
+                h2
+                  a(href='javascript:void(0)') Lorem ipsum Minim Ut in nulla labore sint nostrud
+
+                p
+                  | Sed ut perspiciatis unde omnis iste natus error nesciunt voluptas sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+                p
+                  | Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt voluptas sit aspernatur.
+
+                .row
+                  .col-md-6
+                    .mt-1
+                      a.ms-tag.ms-tag-danger(href='javascript:void(0)') Productivity
+                      a.ms-tag.ms-tag-royal(href='javascript:void(0)') Resources
+                      a.ms-tag.ms-tag-warning(href='javascript:void(0)') Graphics
+                  .col-md-6
+                    a.btn.btn-primary.btn-raised.btn-block.animate-icon(href='javascript:void(0)')
+                      | Read more
+                      i.ml-1.no-mr.zmdi.zmdi-long-arrow-right
+
+            article.card.mb-4.wow.materialUp.animation-delay-5
+              figure.ms-thumbnail.ms-thumbnail-diagonal
+                img.img-responsive(src='https://mysavannah.files.wordpress.com/2015/08/robyn-shirley-matilda-jane-clothing-independent-trunk-keeper-sponsors-happily-ever-after-ball_1352.jpg', alt='')
+
+                figcaption.ms-thumbnail-caption.text-center
+                  .ms-thumbnail-caption-content
+                    h3.ms-thumbnail-caption-title Lorem ipsum dolor sit
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    .mt-2
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.mr-1.btn-circle-white.color-danger(href='javascript:void(0)')
+                        i.zmdi.zmdi-favorite
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.ml-1.mr-1.btn-circle-white.color-warning(href='javascript:void(0)')
+                        i.zmdi.zmdi-star
+                      a.btn-circle.btn-circle-raised.btn-circle-sm.ml-1.btn-circle-white.color-success(href='javascript:void(0)')
+                        i.zmdi.zmdi-share
+              .card-block
+                h2
+                  a(href='javascript:void(0)') Lorem ipsum Minim Ut in nulla labore sint nostrud
+                p
+                  | Sed ut perspiciatis unde omnis iste natus error nesciunt voluptas sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                p
+                  | Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt voluptas sit aspernatur.
+                .row
+                  .col-md-6
+                    .mt-1
+                      a.ms-tag.ms-tag-info(href='javascript:void(0)') Design
+                      a.ms-tag.ms-tag-success(href='javascript:void(0)') Multimedia
+                      a.ms-tag.ms-tag-warning(href='javascript:void(0)') Graphics
+
+                  .col-md-6
+                    a.btn.btn-primary.btn-raised.btn-block.animate-icon(href='javascript:void(0)')
+                      | Read more
+                      i.ml-1.no-mr.zmdi.zmdi-long-arrow-right
+
+            nav(aria-label='Page navigation')
+              ul.pagination
+                li
+                  a(href='javascript:void(0)', aria-label='Previous')
+                    span(aria-hidden='true') &laquo;
+
+                li.active
+                  a(href='javascript:void(0)') 1
+
+                li
+                  a(href='javascript:void(0)') 2
+
+                li
+                  a(href='javascript:void(0)') 3
+
+                li
+                  a(href='javascript:void(0)') 4
+
+                li
+                  a(href='javascript:void(0)', aria-label='Next')
+                    span(aria-hidden='true') &raquo;
+
+          .col-md-4
+            .card.animated.fadeInUp.animation-delay-7
+              .ms-hero-bg-royal.ms-hero-img-coffee
+                h3.color-white.index-1.text-center.no-m.pt-4 Jen Kraydich
+
+                .color-medium.index-1.text-center.np-m @jenkraydich
+
+                img.img-avatar-circle(src='assets/img/jen_kraydich_avatar.png', alt='...')
+
+              .card-block.pt-4.text-center
+                h3.color-primary About me
+
+                p
+                  | Lorem ipsum dolor sit amet, consectetur alter adipisicing elit. Facilis, natuse inse voluptates officia repudiandae beatae magni es magnam autem molestias.
+
+                a.btn-circle.btn-circle-raised.btn-circle-xs.mt-1.mr-1.no-mr-md.btn-facebook(href='javascript:void(0)')
+                  i.zmdi.zmdi-facebook
+
+                a.btn-circle.btn-circle-raised.btn-circle-xs.mt-1.mr-1.no-mr-md.btn-twitter(href='javascript:void(0)')
+                  i.zmdi.zmdi-twitter
+
+                a.btn-circle.btn-circle-raised.btn-circle-xs.mt-1.mr-1.no-mr-md.btn-instagram(href='javascript:void(0)')
+                  i.zmdi.zmdi-instagram
+
+            .card.animated.fadeInUp.animation-delay-7
+              .card-tabs
+                ul.nav.nav-tabs.nav-tabs-full.nav-tabs-4.shadow-2dp(role='tablist')
+                  li.active(role='presentation')
+                    a.withoutripple(href='#favorite', aria-controls='favorite', role='tab', data-toggle='tab')
+                      i.no-mr.zmdi.zmdi-star
+
+                  li(role='presentation')
+                    a.withoutripple(href='#categories', aria-controls='categories', role='tab', data-toggle='tab')
+                      i.no-mr.zmdi.zmdi-folder
+
+                  li(role='presentation')
+                    a.withoutripple(href='#archives', aria-controls='archives', role='tab', data-toggle='tab')
+                      i.no-mr.zmdi.zmdi-time
+
+                  li(role='presentation')
+                    a.withoutripple(href='#tags', aria-controls='tags', role='tab', data-toggle='tab')
+                      i.no-mr.zmdi.zmdi-tag-more
+
+              .tab-content
+                #favorite.tab-pane.fade.active.in(role='tabpanel')
+                  .card-block
+                    .ms-media-list
+                      .media
+                        .media-left.media-middle
+                          a(href='#')
+                            img.media-object.media-object-circle(src='assets/img/demo/p75.jpg', alt='...')
+
+                        .media-body
+                          a.media-heading(href='javascript:void(0)') Lorem ipsum dolor sit amet in consectetur adipisicing
+
+                          .media-footer.text-small
+                            span.mr-1
+                              i.zmdi.zmdi-time.color-info.mr-05
+                              |  August 18, 2016
+                            span
+                              i.zmdi.zmdi-folder-outline.color-success.mr-05
+                              a(href='javascript:void(0)') Design
+                      .media
+                        .media-left.media-middle
+                          a(href='#')
+                            img.media-object.media-object-circle(src='assets/img/demo/p75.jpg', alt='...')
+                        .media-body
+                          a.media-heading(href='javascript:void(0)') Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                          .media-footer.text-small
+                            span.mr-1
+                              i.zmdi.zmdi-time.color-info.mr-05
+                              |  August 18, 2016
+                            span
+                              i.zmdi.zmdi-folder-outline.color-danger.mr-05
+                              a(href='javascript:void(0)') Productivity
+                      .media
+                        .media-left.media-middle
+                          a(href='#')
+                            img.media-object.media-object-circle(src='assets/img/demo/p75.jpg', alt='...')
+                        .media-body
+                          a.media-heading(href='javascript:void(0)') inventore veritatis et vitae quasi architecto beatae
+                          .media-footer.text-small
+                            span.mr-1
+                              i.zmdi.zmdi-time.color-info.mr-05
+                              |  August 18, 2016
+                            span
+                              i.zmdi.zmdi-folder-outline.color-royal-light.mr-05
+                              a(href='javascript:void(0)') Resources
+                #categories.tab-pane.fade(role='tabpanel')
+                  .list-group
+                    a.list-group-item.withripple(href='javascript:void(0)')
+                      i.color-info.zmdi.zmdi-cocktail
+                      | Design
+                      span.badge.badge-info 25
+                    a.list-group-item.withripple(href='javascript:void(0)')
+                      i.color-warning.zmdi.zmdi-collection-image
+                      |  Graphics
+                      span.badge.badge-warning 14
+                    a.list-group-item.withripple(href='javascript:void(0)')
+                      i.color-danger.zmdi.zmdi-case-check
+                      |  Productivity
+                      span.badge.badge-danger 7
+                    a.list-group-item.withripple(href='javascript:void(0)')
+                      i.color-royal.zmdi.zmdi-folder-star-alt
+                      | Resources
+                      span.badge.badge-royal 67
+                    a.list-group-item.withripple(href='javascript:void(0)')
+                      i.color-success.zmdi.zmdi-play-circle-outline
+                      | Multimedia
+                      span.badge.badge-success 32
+                #archives.tab-pane.fade(role='tabpanel')
+                  .list-group
+                    a.list-group-item.withripple(href='javascript:void(0)')
+                      i.zmdi.zmdi-calendar
+                      |  January 2016
+                      span.badge 25
+                    a.list-group-item.withripple(href='javascript:void(0)')
+                      i.zmdi.zmdi-calendar
+                      |  February 2016
+                      span.badge 14
+                    a.list-group-item.withripple(href='javascript:void(0)')
+                      i.zmdi.zmdi-calendar
+                      |  March 2016
+                      span.badge 9
+                    a.list-group-item.withripple(href='javascript:void(0)')
+                      i.zmdi.zmdi-calendar
+                      |  April 2016
+                      span.badge 12
+                    a.list-group-item.withripple(href='javascript:void(0)')
+                      i.zmdi.zmdi-calendar
+                      |  June 2016
+                      span.badge 65
+                #tags.tab-pane.fade(role='tabpanel')
+                  .card-block.text-center
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Design
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Productivity
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Web
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Resources
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Multimedia
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') HTML5
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') CSS3
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Javascript
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Jquery
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Bootstrap
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Angular
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Gulp
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Atom
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Fonts
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Pictures
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Developers
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Code
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') SASS
+                    a.ms-tag.ms-tag-primary(href='javascript:void(0)') Less
+            .card.card-success.animated.fadeInUp.animation-delay-7
+              .card-header
+                h3.card-title
+                  i.zmdi.zmdi-play-circle-outline
+                  |  Feature Video
+              div(data-type='vimeo', data-video-id='187935649')
+            .card.card-primary.animated.fadeInUp.animation-delay-7
+              .card-header
+                h3.card-title
+                  i.zmdi.zmdi-widgets
+                  |  Text Widget
+              .card-block
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsam non eaque est architecto doloribus, labore nesciunt laudantium, ex id ea, cum facilis similique tenetur fugit nemo id minima possimus.
+      // container
+      aside.ms-footbar
+        .container
+          .row
+            .col-md-4.ms-footer-col
+              .ms-footbar-block
+                h3.ms-footbar-title Sitemap
+                ul.list-unstyled.ms-icon-list.three_cols
+                  li
+                    a(href='index.html')
+                      i.zmdi.zmdi-home
+                      |  Home
+                  li
+                    a(href='page-blog.html')
+                      i.zmdi.zmdi-edit
+                      |  Blog
+                  li
+                    a(href='page-blog.html')
+                      i.zmdi.zmdi-image-o
+                      |  Portafolio
+                  li
+                    a(href='portfolio-filters_sidebar.html')
+                      i.zmdi.zmdi-case
+                      |  Works
+                  li
+                    a(href='page-timeline_left2.html')
+                      i.zmdi.zmdi-time
+                      |  Timeline
+                  li
+                    a(href='page-pricing.html')
+                      i.zmdi.zmdi-money
+                      |  Pricing
+                  li
+                    a(href='page-about.html')
+                      i.zmdi.zmdi-favorite-outline
+                      |  About Us
+                  li
+                    a(href='page-team2.html')
+                      i.zmdi.zmdi-accounts
+                      |  Our Team
+                  li
+                    a(href='page-services.html')
+                      i.zmdi.zmdi-face
+                      |  Services
+                  li
+                    a(href='page-faq2.html')
+                      i.zmdi.zmdi-help
+                      |  FAQ
+                  li
+                    a(href='page-login2.html')
+                      i.zmdi.zmdi-lock
+                      |  Login
+                  li
+                    a(href='page-contact.html')
+                      i.zmdi.zmdi-email
+                      |  Contact
+              .ms-footbar-block
+                h3.ms-footbar-title Subscribe
+
+                p
+                  | Lorem ipsum Amet fugiat elit nisi anim mollit minim labore ut esse Duis ullamco ad dolor veniam velit.
+
+                form
+                  .form-group.label-floating.mt-2.mb-1
+                    .input-group.ms-input-subscribe
+                      label.control-label(for='ms-subscribe')
+                        i.zmdi.zmdi-email
+                        |  Email Adress
+                      input#ms-subscribe.form-control(type='email')
+                  button.ms-subscribre-btn(type='button') Subscribe
+            .col-md-5.col-sm-7.ms-footer-col.ms-footer-alt-color
+              .ms-footbar-block
+                h3.ms-footbar-title.text-center.mb-2 Last Articles
+                .ms-footer-media
+                  .media
+                    .media-left.media-middle
+                      a(href='javascript:void(0)')
+                        img.media-object.media-object-circle(src='assets/img/demo/p75.jpg', alt='...')
+                    .media-body
+                      h4.media-heading
+                        a(href='javascript:void(0)') Lorem ipsum dolor sit expedita cumque amet consectetur adipisicing repellat
+                      .media-footer
+                        span
+                          i.zmdi.zmdi-time.color-info-light
+                          |  August 18, 2016
+                        span
+                          i.zmdi.zmdi-folder-outline.color-warning-light
+                          a(href='javascript:void(0)') Design
+                  .media
+                    .media-left.media-middle
+                      a(href='javascript:void(0)')
+                        img.media-object.media-object-circle(src='assets/img/demo/p75.jpg', alt='...')
+                    .media-body
+                      h4.media-heading
+                        a(href='javascript:void(0)') Labore ut esse Duis consectetur expedita cumque ullamco ad dolor veniam velit
+                      .media-footer
+                        span
+                          i.zmdi.zmdi-time.color-info-light
+                          |  August 18, 2016
+                        span
+                          i.zmdi.zmdi-folder-outline.color-warning-light
+                          a(href='javascript:void(0)') News
+                  .media
+                    .media-left.media-middle
+                      a(href='javascript:void(0)')
+                        img.media-object.media-object-circle(src='assets/img/demo/p75.jpg', alt='...')
+                    .media-body
+                      h4.media-heading
+                        a(href='javascript:void(0)') voluptates deserunt ducimus expedita cumque quaerat molestiae labore
+                      .media-footer
+                        span
+                          i.zmdi.zmdi-time.color-info-light
+                          |  August 18, 2016
+                        span
+                          i.zmdi.zmdi-folder-outline.color-warning-light
+                          a(href='javascript:void(0)') Productivity
+            .col-md-3.col-sm-5.ms-footer-col.ms-footer-text-right
+              .ms-footbar-block
+                .ms-footbar-title
+                  span.ms-logo.ms-logo-white.ms-logo-sm.mr-1 JK
+                  h3.no-m.ms-site-title
+                    | Dtown
+                    span mom
+                address.no-mb
+                  p
+                    i.color-danger-light.zmdi.zmdi-pin.mr-1
+                    |  795 Folsom Ave, Suite 600
+                  p
+                    i.color-warning-light.zmdi.zmdi-map.mr-1
+                    |  San Francisco, CA 94107
+                  p
+                    i.color-info-light.zmdi.zmdi-email.mr-1
+
+                    a(href='mailto:joe@example.com') example@domain.com
+                  p
+                    i.color-royal-light.zmdi.zmdi-phone.mr-1
+                    | +34 123 456 7890
+                  p
+                    i.color-success-light.fa.fa-fax.mr-1
+                    | +34 123 456 7890
+              .ms-footbar-block
+                h3.ms-footbar-title Social Media
+                .ms-footbar-social
+                  a.btn-circle.btn-facebook(href='javascript:void(0)')
+                    i.zmdi.zmdi-facebook
+                  a.btn-circle.btn-twitter(href='javascript:void(0)')
+                    i.zmdi.zmdi-twitter
+                  a.btn-circle.btn-youtube(href='javascript:void(0)')
+                    i.zmdi.zmdi-youtube
+                  br
+                  a.btn-circle.btn-google(href='javascript:void(0)')
+                    i.zmdi.zmdi-google
+                  a.btn-circle.btn-instagram(href='javascript:void(0)')
+                    i.zmdi.zmdi-instagram
+                  a.btn-circle.btn-github(href='javascript:void(0)')
+                    i.zmdi.zmdi-github
+      footer.ms-footer
+        .container
+          p Copyright &copy; Jen Kraydich &amp; Dtownmom, LLC 2017
+      .btn-back-top
+        a#back-top.btn-circle.btn-circle-primary.btn-circle-sm.btn-circle-raised(href='#', data-scroll='')
+          i.zmdi.zmdi-long-arrow-up
+    // sb-site-container
+    .ms-slidebar.sb-slidebar.sb-left.sb-momentum-scrolling.sb-style-overlay
+      header.ms-slidebar-header
+        .ms-slidebar-login
+          a.withripple(href='javascript:void(0)')
+            i.zmdi.zmdi-account
+            |  Login
+
+          a.withripple(href='javascript:void(0)')
+            i.zmdi.zmdi-account-add
+            |  Register
+        .ms-slidebar-title
+          form.search-form
+            input#search-box-slidebar.search-input(type='text', placeholder='Search...', name='q')
+            label(for='search-box-slidebar')
+              i.zmdi.zmdi-search
+          .ms-slidebar-t
+            span.ms-logo.ms-logo-sm JK
+            h3
+              | Dtown
+              span mom
+      .ms-slidebar-social.ms-slidebar-block
+        h4.ms-slidebar-block-title Social Links
+        .ms-slidebar-social
+          a.btn-circle.btn-circle-raised.btn-facebook(href='javascript:void(0)')
+            i.zmdi.zmdi-facebook
+            span.badge.badge-pink 12
+            .ripple-container
+          a.btn-circle.btn-circle-raised.btn-twitter(href='javascript:void(0)')
+            i.zmdi.zmdi-twitter
+            span.badge.badge-pink 4
+            .ripple-container
+          a.btn-circle.btn-circle-raised.btn-google(href='javascript:void(0)')
+            i.zmdi.zmdi-google
+            .ripple-container
+          a.btn-circle.btn-circle-raised.btn-instagram(href='javascript:void(0)')
+            i.zmdi.zmdi-instagram
+            .ripple-container
+    script(src='assets/js/plugins.min.js')
+    script(src='assets/js/app.min.js')
+    script(src='assets/js/configurator.min.js')

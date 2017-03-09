@@ -2,5 +2,5 @@ node_modules
 *.bak
 *.swp
 .vscode
-app/static/
-typings/
+app/static
+typings
