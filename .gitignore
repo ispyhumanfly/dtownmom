@@ -2,5 +2,8 @@ node_modules
 *.bak
 *.swp
 .vscode
-src/static
+src/cache
+src/logs
 typings
+!typings/index.d.ts
+
